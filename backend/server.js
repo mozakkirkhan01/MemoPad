@@ -8,7 +8,7 @@ app.use(cors()); //Allow requests from frontend
 app.use(express.json()); //Parse JSON bodies
 
 //connect to MongoDB
-mongoose.connect(procees.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.error(err));
 
